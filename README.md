@@ -1,101 +1,119 @@
-# Getting Started with Create React App
+# **Kanban Board Application**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), a popular toolchain for setting up React projects quickly and efficiently.
 
-## Available Scripts
+---
+
+## **Available Scripts**
 
 In the project directory, you can run:
 
-### `npm start`
+### **`npm start`**
+- Starts the development server and runs the app in development mode.
+- Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+- The page reloads automatically when you make changes to the code.
+- Any lint errors will appear in the console.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **`npm test`**
+- Launches the test runner in interactive watch mode.
+- For more information, refer to the [Running Tests](https://create-react-app.dev/docs/running-tests/) section of the Create React App documentation.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **`npm run build`**
+- Builds the app for production, optimizing it for the best performance.
+- Outputs a production-ready version of your app to the `build` folder.
+  - The build is minified, and filenames include unique hashes.
+  - Your app will be ready for deployment.
 
-### `npm run build`
+For additional details, visit the [Deployment Guide](https://create-react-app.dev/docs/deployment/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **`npm run eject`**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> **Note:** This is a one-way operation. Once you eject, you cannot undo this step.
 
-### `npm run eject`
+- **What it Does**:
+  - Removes the single build dependency (`react-scripts`) from your project.
+  - Copies all configuration files and transitive dependencies (e.g., Webpack, Babel, ESLint) directly into your project.
+  - Provides full control over the configuration, allowing you to modify it as needed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Post-Ejection**:
+  - All existing commands (except `eject`) will still work.
+  - However, they will now reference the copied scripts instead of the original `react-scripts` package.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Recommendation**:
+  - Ejecting is rarely necessary and is only recommended if you require significant customization of the configuration (e.g., for advanced Webpack modifications).
+  - Consider alternative approaches like creating a custom Webpack configuration or using tools like [Craco](https://github.com/dilanx/craco) before resorting to ejecting.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **Learn More**
 
-## Learn More
+- For a deeper understanding of Create React App, refer to the official [Create React App documentation](https://create-react-app.dev/docs/getting-started/).
+- To learn React itself, explore the official [React documentation](https://reactjs.org/).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Additional Guides**
 
-### Code Splitting
+### **Code Splitting**
+- Learn how to split your code for optimized performance: [Code Splitting Guide](https://create-react-app.dev/docs/code-splitting/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Analyzing the Bundle Size**
+- Optimize your app's performance by analyzing its bundle size: [Guide to Analyzing Bundle Size](https://create-react-app.dev/docs/analyzing-the-bundle-size/).
 
-### Analyzing the Bundle Size
+### **Making a Progressive Web App**
+- Transform your app into a Progressive Web App (PWA): [PWA Guide](https://create-react-app.dev/docs/making-a-progressive-web-app/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Advanced Configuration**
+- For advanced customization options, refer to: [Advanced Configuration](https://create-react-app.dev/docs/advanced-configuration/).
 
-### Making a Progressive Web App
+### **Deployment**
+- Learn how to deploy your app to various platforms: [Deployment Guide](https://create-react-app.dev/docs/deployment/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **`npm run build` Fails to Minify**
+- Troubleshooting guide for minification issues: [Build Fails to Minify](https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify).
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-
+---
 
 # Kanban Board Application
 
 This Kanban board application allows users to manage tasks across different stages: To Do, In Progress, Peer Review, and Done. The board supports drag-and-drop functionality for task movement and includes a search box to filter tasks by title.
 
-## Features
+## **Features**
 
-- **Kanban Board Layout**: Four sections/columns representing task stages:
-  - To Do
-  - In Progress
-  - Peer Review
-  - Done
+### 🛠️ **Kanban Board**
+- **Four Columns** representing task stages:
+  - **To Do**: Tasks to be started.
+  - **In Progress**: Tasks currently being worked on.
+  - **Peer Review**: Completed tasks under review.
+  - **Done**: Fully completed tasks.
+- Tasks are visually categorized and easy to manage.
 
-- **Task Cards**: Each task card displays:
+### 🗂️ **Task Cards**
+- Each card displays:
+  - **Task Title**: Shown prominently for quick identification.
+  - **Task Description**: Brief details of the task.
+- Fully **draggable** between columns for efficient workflow management.
 
-  - Task Title
-  - Task Description
-  - Tasks are draggable between columns.
+### 🎯 **Drag-and-Drop Functionality**
+- Move tasks seamlessly between columns.
+- Rearrange tasks within the same column to set priorities.
 
-- **Drag and Drop Functionality**: Move tasks between columns and place them in the correct position.
-- **Search Functionality**: Filter tasks in all columns based on the search input.
-- **Add New Tasks**: Create new tasks in the To Do column.
-- **Responsive Design**: The UI is fully responsive.
-- **State Management**: Uses Redux for state management.
-- **Styling**: Uses Material-UI for styling.
+### 🔍 **Real-Time Search**
+- **Search Bar** at the top of the board filters tasks by title.
+- Only tasks matching the query remain visible.
+
+### ➕ **Add New Tasks**
+- A **floating button** allows you to create tasks quickly.
+- Newly added tasks are displayed in the **To Do** column.
+
+### 📱 **Responsive Design**
+- The layout adapts to different screen sizes, making it usable on desktops, tablets, and mobile devices.
 
 ## Technologies Used
 
@@ -119,64 +137,78 @@ bash
 git clone https://github.com/shivani-sha/Kanban_Board_ReactJs
 cd kanban-board
 
-Usage
+2. Install dependencies:
 
-Creating a New Task
-Click the floating button to open the new task modal.
-Fill in the task title and description.
-Click "Create" to add the task to the "To Do" column.
-Moving Tasks
-Drag a task card to move it to a different column.
-Drop the task card in the desired column.
-Searching Tasks
-Type in the search bar to filter tasks by title.
-Matching tasks will be displayed, and non-matching tasks will be hidden.
+   ```bash
+   npm install
+3. Start the development server:
 
-Features
+   ```bash
+   npm start
 
-1. Kanban Board Layout
 
-Four Sections/Columns:
-To Do: Tasks that need to be started.
-In Progress: Tasks that are currently being worked on.
-Peer Review: Tasks that are completed and are awaiting review.
-Done: Tasks that are completed and reviewed.
-Each section displays the tasks relevant to that stage.
+## Usage
 
-2. Task Cards
-Task Information:
-Task Title: Displayed prominently on the card.
-Task Description: Displayed in a shortened form to fit within the card.
-Draggable: Tasks can be dragged and dropped between columns.
+### Creating a New Task
+- Click the floating button to open the new task modal.
+- Fill in the task title and description.
+- Click **"Create"** to add the task to the **To Do** column.
 
-3. Drag and Drop Functionality
-Drag-and-Drop: Implemented using React-DnD library.
-Movement: Tasks can be moved from one column to another.
-Positioning: Tasks can be placed in a specific order within a column.
+### Moving Tasks
+- Drag a task card to move it to a different column.
+- Drop the task card in the desired column.
 
-4. Search Functionality
-Search Bar: Located at the top of the board.
-Filtering: Filters tasks based on the search input in real-time.
-Matching Tasks: Only tasks that match the search query are displayed.
-Non-Matching Tasks: Tasks that do not match the search query are hidden.
+### Searching Tasks
+- Type in the search bar to filter tasks by title.
+- Matching tasks will be displayed, and non-matching tasks will be hidden.
 
-5. Add New Tasks
-Floating Button: A button that opens a modal to create new tasks.
-Task Creation Form:
-Task Title: Input field for the task title.
-Task Description: Input field for the task description.
-New Tasks: Created tasks are added to the "To Do" column.
+---
 
-6. Responsive Design
-Responsive UI: The application layout adjusts to different screen sizes, ensuring usability on both desktop and mobile devices.
+## Features
 
-7. State Management
-Redux: State management is handled using Redux.
-Actions and Reducers: Organized actions and reducers to manage the state of tasks.
+### 1. Kanban Board Layout
+- **Four Sections/Columns**:
+  - **To Do**: Tasks that need to be started.
+  - **In Progress**: Tasks that are currently being worked on.
+  - **Peer Review**: Tasks that are completed and are awaiting review.
+  - **Done**: Tasks that are completed and reviewed.
+- Each section displays the tasks relevant to that stage.
 
-8. Styling
-Material-UI: Used for consistent and modern styling of the application components.
-Custom Styles: Additional styles for specific components to ensure a polished look.
+### 2. Task Cards
+- **Task Information**:
+  - **Task Title**: Displayed prominently on the card.
+  - **Task Description**: Displayed in a shortened form to fit within the card.
+- **Draggable**: Tasks can be dragged and dropped between columns.
 
-9. Data Persistence
-Local Storage: Tasks are stored in local storage, ensuring that task data persists across page reloads.
+### 3. Drag and Drop Functionality
+- **Drag-and-Drop**: Implemented using the React-DnD library.
+- **Movement**: Tasks can be moved from one column to another.
+- **Positioning**: Tasks can be placed in a specific order within a column.
+
+### 4. Search Functionality
+- **Search Bar**: Located at the top of the board.
+- **Filtering**: Filters tasks based on the search input in real-time.
+- **Matching Tasks**: Only tasks that match the search query are displayed.
+- **Non-Matching Tasks**: Tasks that do not match the search query are hidden.
+
+### 5. Add New Tasks
+- **Floating Button**: A button that opens a modal to create new tasks.
+- **Task Creation Form**:
+  - **Task Title**: Input field for the task title.
+  - **Task Description**: Input field for the task description.
+- **New Tasks**: Created tasks are added to the **To Do** column.
+
+### 6. Responsive Design
+- **Responsive UI**: The application layout adjusts to different screen sizes, ensuring usability on both desktop and mobile devices.
+
+### 7. State Management
+- **Redux**: State management is handled using Redux.
+- **Actions and Reducers**: Organized actions and reducers to manage the state of tasks.
+
+### 8. Styling
+- **Material-UI**: Used for consistent and modern styling of the application components.
+- **Custom Styles**: Additional styles for specific components to ensure a polished look.
+
+### 9. Data Persistence
+- **Local Storage**: Tasks are stored in local storage, ensuring that task data persists across page reloads.
+
