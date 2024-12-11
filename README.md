@@ -116,7 +116,7 @@ This Kanban board application allows users to manage tasks across different stag
 1. Clone the repository:
 
 bash
-git clone https://github.com/kaverimeka/kanban-board.git
+git clone https://github.com/shivani-sha/Kanban_Board_ReactJs
 cd kanban-board
 
 Usage
